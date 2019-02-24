@@ -4,16 +4,22 @@ import {
     Button,
     View
 } from 'react-native'
+import Icon from 'react-native-vector-icons/Feather'
 
 export default class LoginScreen extends Component {
   render() {
     return (
-      <View style={styles.container}>
+        <View style={styles.container}>
+            <Icon name='headphones' size={50} color={'white'}
+                onPress={() => this.props.navigation.navigate('Home')}
+            />
+
             <Button
-                title='Go to HomeScreen'
+                color='#fff'
+                title='Login to IndieCloud'
                 onPress={() => this.props.navigation.navigate('Home')} 
             />
-      </View>
+        </View>
     );
   }
 }
@@ -23,6 +29,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF'
+        backgroundColor: '#5D5179'
     }
 })

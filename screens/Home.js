@@ -8,12 +8,12 @@ import {
 export default class HomeScreen extends Component {
   render() {
     return (
-      <View style={styles.container}>
+        <View style={styles.container}>
             <Button 
                 title='Go to LoginScreen'
                 onPress={() => this.props.navigation.navigate('Login')}
             />
-      </View>
+        </View>
     )
   }
 }
