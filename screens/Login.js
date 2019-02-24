@@ -10,7 +10,7 @@ export default class LoginScreen extends Component {
   render() {
     return (
         <View style={styles.container}>
-            <Icon name='headphones' size={50} color={'white'}
+            <Icon name='headphones' size={100} color={'white'}
                 onPress={() => this.props.navigation.navigate('Home')}
             />
 
