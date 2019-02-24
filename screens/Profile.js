@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
-import { 
-    StyleSheet,
-    Button,
-    View
-} from 'react-native'
+import { StyleSheet, View, Button } from 'react-native'
 
-export default class HomeScreen extends Component {
+export default class ProfileScreen extends Component {
     static navigationOptions = {
-        headerTitle: 'Home',
+        headerTitle: 'Profile',
         headerTitleStyle: {
             color: '#444',
             fontWeight: 'normal'
@@ -17,9 +13,9 @@ export default class HomeScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button 
+                <Button
                     title='Play Song'
-                    onPress={() => this.props.navigation.navigate('Song')}
+                    onPress={() => this.props.navigation.navigate('Song')} 
                 />
             </View>
         )
@@ -31,6 +27,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF'
+        backgroundColor: '#fff'
     }
 })
